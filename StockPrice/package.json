@@ -1,0 +1,17 @@
+{
+  "name": "stock-price",
+  "version": "0.0.0",
+  "description": "StockPrice",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "etherport-client": "^0.1.4",
+    "finnhub": "^1.2.14",
+    "johnny-five": "^2.1.0",
+    "ramda": "^0.28.0",
+    "serialport": "^10.4.0",
+    "udp-serial": "^0.2.0"
+  }
+}
