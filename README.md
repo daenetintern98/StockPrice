@@ -120,9 +120,9 @@ HTTP request to that API in traditinal way https://www.npmjs.com/package/axios
 ## Limitations
 The GPIO device that we can connect to the board and control( in a convinience way) depend
 on the support devices listed in johnny-five library. Of course we can control other unsupported devices
-by calling and controlling the GPIO pin directly. However it require the knowledge of bit-shift,
-trigger, pointer and C++.
-The wifi connection need to be stable ortherwise the device will stop working as it's controlled
+by calling and controlling the GPIO pin directly. However it require the knowledge of bit-shift register,
+trigger, pointer and C++. (ex : the 7 segment digital led using shift register 74HC595 can't be use just by calling the five.digits)
+The wifi connection also need to be stable ortherwise the device will stop working as it's controlled
 100% through wireless tcp/ip connection.
 
 ## Conclusion
