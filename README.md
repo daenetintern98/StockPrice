@@ -65,7 +65,20 @@ Connects 2 boards to the computer and use arduinoIDE to upload `ledAMD.ino` and 
 After upload is finished. the board can be connected and change behavior using javascript.
 
 ### Set up javascript.
-Modify the variables `ports` in the code to match your actual properties.
+
+#### First you will need to register the GPIO of the board
+const D0 = 16;
+const D1 = 5;
+const D2 = 4;
+const D3 = 0;
+const D4 = 2;
+const D5 = 14;
+const D6 = 12;
+const D7 = 13;
+const D8 = 15;
+* these number is the number of the GPIO, for example, from the scheme, the D1 of the board is GPIO0.
+
+#### Modify the variables `ports` in the code to match your actual properties.
 
 
 `var ports = [
@@ -86,6 +99,18 @@ Modify the variables `ports` in the code to match your actual properties.
 ];`
 * if you have more than 2 boards, simply follow the pattern to add more.
 
+#### Register the 7segment led digit
+var digitsKO = new five.Led.Digits({
+        pins: {
+            data: D1,
+            clock: D2,
+            cs: D0
+        },
+        board: boards.byId("KO")
+    });
+* Remember to connect pin data --> D1, clock --> D2, cs --> D3 using some wire 
+
+#### Modify the prefered stock. 
 Modify the stock code to change the stock we prefer to get the price from the API
 `finnhubClient.quote("{your_prefered_stock}", (error, data, response)`
 
