@@ -25,8 +25,8 @@ Connect to the boards to showing the real time price of specified stock.
 ### Some breadboard and wires.
 
 ### Tools
-Visual Studio 
-Arduino IDE
+Visual Studio,
+Arduino IDE,
 Firmata Builder
 ### Libraries
 Firmata,
