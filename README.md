@@ -29,12 +29,12 @@ Visual Studio,
 Arduino IDE,
 Firmata Builder
 ### Libraries
-Firmata,
-ESP8266Wifi,
-Jonhnny-Five,
-ramda,
-etherport-client,
-finnhub
+* Firmata: For control the GPIO remotely (throught serial connection)
+ESP8266Wifi: Configurate the network on the esp9266 micro-chip,
+Jonhnny-Five: Control the SoC devices using javascript,
+ramda: utilities for java-cript,
+etherport-client: config connection properties,
+finnhub: libarary to call the API finnhub for stock data.
 
 ### API
 Finnhub API 
